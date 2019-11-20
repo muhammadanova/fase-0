@@ -1,0 +1,19 @@
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+SET tahun WITH VALUE 2019
+SET kabisat WITH VALUE 4
+SET benar WITH VALUE Tahun Kabisat
+SET salah WITH VALUE Bukan Tahun Kabisat
+
+IF CALCULATE tahun / kabisat = 0 THEN
+  DISPLAY benar
+ELSE
+  DISPLAY salah
+ENDIF

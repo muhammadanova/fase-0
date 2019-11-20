@@ -1,0 +1,12 @@
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
+
+SET pakaian WITH VALUE 0
+SET jmlpakaian WITH VALUE 20
+SET masukan_pakaian WITH VALUE 1
+
+WHILE pakaian < jmlpakaian
+  COMPUTE pakaian as pakaian + masukan_pakaian
+ENDWHILE
+

@@ -24,13 +24,13 @@ while(target_while2 >= j){
 
 // LOOPING PERTAMA
 var target_for_1 = 20
-for(var k = 0; k <= target_for_1; k++){
+for(var k = 1; k <= target_for_1; k++){
   console.log(k + ' - I love coding')
 }
 
 // LOOPING KEDUA
 var target_for_2 = 20
-for(var l = target_for_2; l >= 0; l--){
+for(var l = target_for_2; l >= 1; l--){
   console.log(l + ' - I will become fullstack developer')
 }
 

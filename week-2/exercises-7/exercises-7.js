@@ -3,7 +3,7 @@ var rows1 = 5
 for(var i = 0; i < rows1; i++){
   var tampung = ''
   tampung += '*'
-  // console.log(tampung)
+  console.log(tampung)
 }
 
 // 2. Menyusun Barisan Bintang Dengan Nested Looping
@@ -13,7 +13,7 @@ for(var i = 0; i < rows2; i++){
   for(var j = 0; j < rows2; j++){
     tampung += '*'
   }
-  // console.log(tampung)
+  console.log(tampung)
 }
 
 // 3. Menyusun Barisan Tangga Bintang Dengan Nested Looping

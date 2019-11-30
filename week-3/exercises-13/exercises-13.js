@@ -32,12 +32,14 @@ function targetTerdekat(arr) {
     }else{
       return tempX[0] - tempO[tempO.length-1]
     }
-  }else{
+  }else if(tempX.length < tempO.length){
     if(tempX[tempX.length-1] > tempO[tempO.length-1]){
       return tempX[tempX.length-1] - tempO[tempO.length-1]
     }else{
       return tempO[0] - tempX[tempX.length-1]
     }
+  }else if(tempO.length === 0){
+    return 0
   }
 }
 
@@ -52,3 +54,5 @@ console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
 console.log(targetTerdekat([' ', 'o', ' ', 'o', 'o', ' ', ' ', 'x'])); // 3
 console.log(targetTerdekat(['o', 'o', 'o', 'o', ' ', 'x', ' ', ' '])); // 2
 console.log(targetTerdekat([' ', 'o', ' ', 'o', 'x', ' ', ' ', ' '])); // 1
+console.log(targetTerdekat([' ', 'o', ' ', ' ', ' ', ' ', 'o', ' '])); // 0
+

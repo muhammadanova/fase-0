@@ -35,7 +35,7 @@ console.log(highestScore([
   },
   {
     name: 'Sergei',
-    score: 99,
+    score: 74,
     class: 'foxes'
   },
   {

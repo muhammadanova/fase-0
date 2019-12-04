@@ -1,20 +1,23 @@
 function changeMe(arr) {
-  for(var i = 0; i < arr.length; i++){
-    // console.log(arr[i])
-    var newObj = {}
-    newObj.firstName = arr[i][0]
-    newObj.lastName = arr[i][1]
-    newObj.gender = arr[i][2]
-    // KALO PAKE CONDITIONAL
-    if(arr[i][3] === undefined){
-      newObj.age = 'Invalid Birth Year'  
-    }else{
-      newObj.age = arr[i][3]
+  if(arr.length === 0){
+    console.log('""')
+  }else{
+    for(var i = 0; i < arr.length; i++){
+      // console.log(arr[i])
+      var newObj = {}
+      newObj.firstName = arr[i][0]
+      newObj.lastName = arr[i][1]
+      newObj.gender = arr[i][2]
+      // KALO PAKE CONDITIONAL
+      if(arr[i][3] === undefined){
+        newObj.age = 'Invalid Birth Year'  
+      }else{
+        newObj.age = arr[i][3]
+      }
+      // KALO PAKE BINDING
+      // newObj.age = arr[i][3] === undefined ? 'Invalid Birth Year' : arr[i][3]
+      console.log(i+1 + '. ' + newObj.firstName + ' ' + newObj.lastName + ':' + '\n', newObj)
     }
-    // KALO PAKE BINDING
-    // newObj.age = arr[i][3] === undefined ? 'Invalid Birth Year' : arr[i][3]
-    console.log(i+1 + '. ' + newObj.firstName + ' ' + newObj.lastName + ':')
-    console.log(newObj)
   }
 }
 

@@ -6,7 +6,14 @@ function changeMe(arr) {
     newObj.firstName = arr[i][0]
     newObj.lastName = arr[i][1]
     newObj.gender = arr[i][2]
-    newObj.age = arr[i][3] === undefined ? 'Invalid Birth Year' : arr[i][3]
+    // KALO PAKE CONDITIONAL
+    if(arr[i][3] === undefined){
+      newObj.age = 'Invalid Birth Year'  
+    }else{
+      newObj.age = arr[i][3]
+    }
+    // KALO PAKE BINDING
+    // newObj.age = arr[i][3] === undefined ? 'Invalid Birth Year' : arr[i][3]
     result.push(newObj)
   }
   console.log(result)

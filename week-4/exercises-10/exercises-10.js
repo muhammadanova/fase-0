@@ -1,5 +1,4 @@
 function changeMe(arr) {
-  var result = []
   for(var i = 0; i < arr.length; i++){
     // console.log(arr[i])
     var newObj = {}
@@ -14,9 +13,9 @@ function changeMe(arr) {
     }
     // KALO PAKE BINDING
     // newObj.age = arr[i][3] === undefined ? 'Invalid Birth Year' : arr[i][3]
-    result.push(newObj)
+    console.log(i+1 + '. ' + newObj.firstName + ' ' + newObj.lastName + ':')
+    console.log(newObj)
   }
-  console.log(result)
 }
 
 // TEST CASES

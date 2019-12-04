@@ -8,19 +8,19 @@ function shoppingTime(memberId, money) {
     var barang = []
     var kembalian = money
     if(kembalian >= 1500000){
-      barang.push('Sepatu brand Stacattu')
+      barang.push('Sepatu Stacattu')
       kembalian -= 1500000
     }
     if(kembalian >= 500000){
-      barang.push('Baju brand Zoro')
+      barang.push('Baju Zoro')
       kembalian -= 500000
     }
     if(kembalian >= 250000){
-      barang.push('Baju brand H&N')
+      barang.push('Baju H&N')
       kembalian -= 250000
     }
     if(kembalian >= 175000){
-      barang.push('Sweater brand Uniklooh')
+      barang.push('Sweater Uniklooh')
       kembalian -= 175000
     }
     if(kembalian >= 50000){
